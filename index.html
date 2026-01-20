@@ -9,6 +9,8 @@
 </head>
 <body>
     <header class="bg-[#1A0B2E] text-white">
+        
+        <!-- nav section -->
         <nav class="py-8 flex items-center justify-around">
             <h2 class="text-6xl font-extrabold">Tech<span class="text-6xl font-extrabold bg-gradient-to-t from-pink-500  to-purple-950 bg-clip-text text-transparent ">Wave</span></h2>
             <ul class="ta hidden md:flex items-center space-x-8">
@@ -21,9 +23,53 @@
             <img class="md:hidden block" src="assets/hamburger-menu.png" alt="">
         </nav>
 
-        <section>
+        <!-- hero section -->
+        <section class="relative  md:min-h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-[#1A0B2E]">
+    
+            <div class="absolute inset-0 z-0 mb-44 md:mb-0">
+                <img src="assets/hero-bg.png" alt="" class="w-full h-full object-cover opacity-40 md:opacity-100">
+                
+            </div>
 
+            <div class="relative z-10 flex flex-col items-center text-center px-6">
+                
+                <div class="relative mb-8 group">
+                    <span class="absolute top-6 -right-0 bg-[#00FF88] text-black text-lg font-bold px-4 py-2 rounded-full z-30 shadow-lg">
+                        NEW
+                    </span>
+
+                    <div class="relative w-48 h-48 md:w-96 md:h-96 flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+                        <img src="assets/hero-circle.png" alt="" class="absolute inset-0 w-full h-full object-contain">
+                        
+                        <img src="assets/microphone.png" alt="Microphone" class="relative z-20 w-20 md:w-32 h-auto drop-shadow-2xl">
+                    </div>
+                </div>
+
+                <h1 class="text-white text-5xl md:text-7xl font-extrabold tracking-tight mb-4 drop-shadow-md">
+                    TechWave
+                </h1>
+                <p class="text-gray-300 text-sm md:text-lg max-w-md mx-auto mb-10 leading-relaxed">
+                    Your daily dose of tech insights, productivity hacks, and personal growth.
+                </p>
+
+                <div class="flex flex-row h-11 gap-4 w-full md:w-auto mb-10">
+                    <button class="bg-linear-to-r from-yellow-300 via-pink-400 to-purple-950 text-white px-4 py-2 md:px-6 md:py-4 rounded-full flex items-center justify-center md:gap-3 font-semibold shadow-xl hover:brightness-110 transition-all active:scale-95">
+                        <span class="bg-white/20 rounded-full md:p-1">
+                            <img src="assets/spotify.png" alt="">
+                        </span>
+                        Listen On Spotify
+                    </button>
+                    
+                    <button class="border-2 border-[#00FF88] text-[#00FF88] px-10 py-4 rounded-full flex items-center justify-center gap-3 font-bold hover:bg-[#00FFCC]/10 transition-colors">
+                        <span>
+                            <img src="assets/message.png" alt="">
+                        </span>
+                        Subscribe
+                    </button>
+                </div>
+            </div>
         </section>
+
     </header>
 
 
@@ -190,7 +236,7 @@
     </main>
     
 <!-- footer section -->
-    <footer class="w-full min-h-[166px] py-10 bg-[url('./assets/footer-bg.png')] bg-cover bg-center md:bg-[url('./assets/footer-bg.png')] md:bg-cover md:bg-center flex flex-col items-center justify-center px-5">
+    <footer class="w-full min-h-[166px] py-10 bg-[url('./assets/footer-bg.png')] bg-cover bg-center md:w-full md:bg-[url('./assets/footer-bg.png')] md:bg-cover md:bg-center flex flex-col items-center justify-center px-5">
         
         <div class="mb-8">
             <h2 class="text-5xl md:text-6xl text-white font-extrabold ">Tech<span class="text-5xl md:text-6xl font-extrabold bg-gradient-to-t from-pink-500  to-purple-950 bg-clip-text text-transparent ">Wave</span></h2>
